@@ -4,21 +4,23 @@
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "source": "src/index.html",
+  "homepage": "https://jamesrobert.github.io/blue-portfolio",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "parcel",
     "build": "parcel build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "git+https://github.com/JamesRobert013/simplefolio"
   },
   "keywords": [],
   "author": "Jacobo Martinez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobiwave/simplefolio/issues"
+    "url": "https://github.com/JamesRobert013/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.8.2",
@@ -27,6 +29,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^5.0.0",
     "jquery": "^3.6.3",
     "popper.js": "^1.16.1",
     "vanilla-tilt": "^1.8.0"
